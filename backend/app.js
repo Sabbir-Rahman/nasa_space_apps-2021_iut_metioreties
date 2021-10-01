@@ -9,6 +9,7 @@ app.use(cors())
 dotenv.config()
 
 const authRoutes = require('./routers/authRoute')
+const challengeRoutes = require('./routers/challengeRoute')
 
 const PORT = 5000
 
@@ -25,6 +26,7 @@ app.get('/',(req,res)=> {
 })
 
 app.use('/auth',authRoutes)
+app.use('/challenge',challengeRoutes)
 
 
 const connectDB = async () => {
