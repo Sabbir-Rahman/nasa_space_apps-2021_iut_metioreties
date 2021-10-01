@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Countrywise from '../components/Countrywise';
 import Scoreheader from '../components/Scoreheader';
-import Worldwide from '../components/Worldwide';
+import WorldwideInvidual from '../components/WorldwideInvidual';
 
 const Scoreboard = () => {
     return (
@@ -15,8 +15,8 @@ const Scoreboard = () => {
           <Countrywise/>
           </Route>
     
-          <Route path='/Scoreboard/Worldwide'>
-          <Worldwide/>
+          <Route path='/Scoreboard/WorldwideInvidual'>
+          <WorldwideInvidual/>
           </Route>
     
     
