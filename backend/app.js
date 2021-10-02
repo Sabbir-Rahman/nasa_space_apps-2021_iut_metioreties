@@ -10,6 +10,7 @@ dotenv.config()
 
 const authRoutes = require('./routers/authRoute')
 const challengeRoutes = require('./routers/challengeRoute')
+const leaderInfoRoutes = require('./routers/leaderinfoRoute')
 
 const PORT = 5000
 
@@ -27,6 +28,7 @@ app.get('/',(req,res)=> {
 
 app.use('/auth',authRoutes)
 app.use('/challenge',challengeRoutes)
+app.use('/leaderinfo',leaderInfoRoutes)
 
 
 const connectDB = async () => {
