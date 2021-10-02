@@ -26,3 +26,8 @@ In today's world, where the privileged are contributing more towards environment
 ## The Complete Picture
 - We find climate injustices by calculating the effects of climate change in a community and the quality of life of that community. If a community has a very poor quality of life and also suffers heavily from impacts from climate change, that is climate injustice.
 - We get location-based natural event metadata from EONET and compare it with human index related data from HDRO to identify specific climate injustices
+
+![Screenshot challenges](https://user-images.githubusercontent.com/57323907/135718089-18b19a71-dbe7-4efd-96cd-6ed2d25d5155.png)
+
+![image](https://user-images.githubusercontent.com/57323907/135718047-e2a79747-78c1-431e-b250-971f48296817.png)
+
