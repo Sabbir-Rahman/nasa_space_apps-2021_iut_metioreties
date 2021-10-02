@@ -20,7 +20,6 @@ const requiredUniqueString = {
 const userChallengeSchema = mongoose.Schema({
     user_email: requiredString,
     challenge_id: requiredString,
-    complete_time: Number,
     timestamp: {
         type: Date,
         default: new Date(),
