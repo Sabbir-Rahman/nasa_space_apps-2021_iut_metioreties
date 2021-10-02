@@ -1,6 +1,6 @@
 import React from 'react'
 import Chartprofile from '../components/Chartprofile'
-import SingleCard from '../components/SingleCard'
+import ProfileCard from '../components/ProfileCard'
 
 
 const Profile = () => {
@@ -9,7 +9,7 @@ const Profile = () => {
       // <div class="container sm mx-auto">
       <div className="grid gap-8 lg:grid-cols-5 p-10 md:grid-cols-1  sm:grid-cols-1">
       <div className="lg:col-span-2  ">
-       <SingleCard />
+       <ProfileCard />
       </div>
            <div className="lg:col-span-3 flex justify-self-center self-center " > <Chartprofile/></div>
            

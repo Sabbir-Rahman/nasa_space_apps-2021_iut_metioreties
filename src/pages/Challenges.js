@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../components/Card.js'
 
 const Challenges = () => {
+
+    const[challenge,setChallenge]  = useState()
+    // useEffect(()=>{
+
+    // },[])
     return (
         <div>
           <div class="container my-12 mx-auto px-4 md:px-12">
                     <div class="flex flex-wrap -mx-1 lg:-mx-4">
 
-                            <Card title={'Challenge One'} joined={"12326"} />
+                            <Card title={'Challenge One'} joined={"12326"}  />
                             <Card title={"Challenge Two"} joined={"98734"} />
                             <Card title={"Challenge Three"} joined={"2434"} />
                             <Card title={"Challenge Four"} joined={"123"} />

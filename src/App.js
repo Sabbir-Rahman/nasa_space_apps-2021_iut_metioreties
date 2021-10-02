@@ -6,31 +6,38 @@ import Donation from './pages/Donation';
 import Map from "./pages/Map";
 import Profile from './pages/Profile';
 import Scoreboard from './pages/Scoreboard';
+import SignUp from './pages/SignUp';
 function App() {
   return (
   <Router>
     <Header/>
     <Switch>
 
-   
+
+    
       <Route path='/profile'>
       <Profile/>
       </Route>
+      
 
       <Route path='/Challenges'>
       <Challenges/>
       </Route>
+
       <Route path='/Scoreboard'>
       <Scoreboard/>
       </Route>
+
       <Route path='/Map'>
       <Map/>
       </Route>
+
       <Route path='/donation'>
       <Donation/>
       </Route>
+      
       <Route>
-        <Link  exact to ='/'>Root</Link>
+        <Link  exact to ='/'><SignUp/></Link>
       </Route>
 
     </Switch>

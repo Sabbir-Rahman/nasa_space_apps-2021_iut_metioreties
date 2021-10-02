@@ -4,25 +4,26 @@ const SingleCard = (props) => {
     return (
           <article class="overflow-hidden rounded-lg shadow-lg">
 
-                <a href="#">
-                    <img alt="Placeholder" class="h-auto w-full" src="https://picsum.photos/600/400/?random" ></img>
-                </a>
+                {/* <a href="#">
+                    <img alt="Placeholder" class="h-auto w-full" src='../image/planttree.png'></img>
+                </a> */}
 
                 <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                     <h1 class="text-lg">
-                        <a class="no-underline hover:underline text-black" href="#">
                             {props.title}
-                        </a>
+                      
                     </h1>
                     <p class="text-grey-darker text-sm">
-                       {props.date}
+                       {props.date} joined
                     </p>
                 </header>
 
                 <footer class="flex items-center justify-between leading-none p-2 md:p-4">
                     <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random"></img>
                         <p class="ml-2 text-sm">
+                        <button class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+{props.button}
+</button>
                           
                         </p>
                     </a>

@@ -1,9 +1,22 @@
 import GoogleMapReact from 'google-map-react';
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import LocationMarkerFire from '../components/LocationMarkerFire';
 
 
 const Map = ({center,zoom}) => {
+
+    const [data,setdata]=useState([])
+    const[fire,setFire]=useState([])
+    const[loading,setloading]=useState(false)
+
+    useEffect(()=>{
+        setloading(true)
+        fetch(`https://eonet.sci.gsfc.nasa.gov/api/v3/events`)
+        .then(res=>res.json())
+        .then(data=>setdata(data.events))
+        setloading(true)
+
+    },[])
     return (
         <div className='map' >
             <GoogleMapReact
@@ -12,6 +25,7 @@ const Map = ({center,zoom}) => {
    }}
    defaultCenter={center}
    defaultZoom={zoom}>
+       <LocationMarkerFire lat={center.lat} lng = {center.lng} />
             </GoogleMapReact>
         
             
