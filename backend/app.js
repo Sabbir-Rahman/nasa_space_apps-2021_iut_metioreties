@@ -12,6 +12,7 @@ const authRoutes = require('./routers/authRoute')
 const challengeRoutes = require('./routers/challengeRoute')
 const leaderInfoRoutes = require('./routers/leaderinfoRoute')
 const identifyRoutes = require('./routers/identifyRoute')
+const complainRoutes = require('./routers/complainRoute')
 
 const PORT = 5000
 
@@ -31,7 +32,7 @@ app.use('/auth',authRoutes)
 app.use('/challenge',challengeRoutes)
 app.use('/leaderinfo',leaderInfoRoutes)
 app.use('/identify',identifyRoutes)
-
+app.use('/complain',complainRoutes)
 
 const connectDB = async () => {
     try {
